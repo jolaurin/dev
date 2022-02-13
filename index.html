@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,8 @@
   </h1>
   <div id="number">
   </div>
-  <button id="newNumber" onclick="getNewNumber(101);">Nouveau nombre</button>
+  <button id="btnNumber" onclick="getNewNumber(101);">Nouveau nombre</button>
+  <button id="speak" onclick="speak();">Dire le nombre</button>
 </body>
 <script>
   function getNewNumber(limit){
@@ -19,6 +20,11 @@
     let number = Math.floor(Math.random() * limit);
     numberContainer.innerHTML = number;
 
+  }
+
+  function speak() {
+    let number = document.getElementById("number").innerHTML();
+    window.speechSynthesis.speak(number);
   }
 </script>
 </html>
