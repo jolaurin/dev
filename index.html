@@ -15,7 +15,7 @@
 </body>
 <script>
   function getNewNumber(limit){
-    let numberContainer = getDocumentById("number");
+    let numberContainer = document.getElementById("number");
     let number = Math.floor(Math.random() * limit);
     numberContainer.innerHTML = number;
 
