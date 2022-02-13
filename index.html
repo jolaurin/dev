@@ -3,16 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/dist/main.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
 </head>
 <body>
-  <h1 class="text-3xl font-bold underline">
-    Hello test!
-  </h1>
-  <div id="number">
+  <div id="number" class="text-9xl">
   </div>
-  <button id="btnNumber" onclick="getNewNumber(101);">Nouveau nombre</button>
-  <button id="speak" onclick="speak();">Dire le nombre</button>
+  <button id="btnNumber" onclick="getNewNumber(101);" class="border-2 border-solid border-green-700 rounded-full p-2">Nouveau nombre</button>
+  <button id="btnNumber" onclick="speak();" class="border-2 border-solid border-red-600 rounded-full p-2">Dire le nombre</button>
 </body>
 <script>
   function getNewNumber(limit){
