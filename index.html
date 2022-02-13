@@ -23,7 +23,8 @@
   }
 
   function speak() {
-    let number = document.getElementById("number").innerHTML();
+    let speech = new SpeechSynthesisUtterance();
+    speech.text = document.getElementById("number").innerHTML;
     window.speechSynthesis.speak(number);
   }
 </script>
