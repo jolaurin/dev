@@ -7,7 +7,16 @@
 </head>
 <body>
   <h1 class="text-3xl font-bold underline">
-    Hello world!
+    Hello test!
   </h1>
+  <div id="number">
+  </div>
+  <button id="newNumber" onclick="getNewNumber(101);"></button>
 </body>
+<script type="javascript">
+  function getNewNumber(limit)
+    let numberContainer = getDocumentById("number");
+    let number = Math.floor(Math.random() * limit);
+    numberContainer.innerHTML = number;
+</script>
 </html>
