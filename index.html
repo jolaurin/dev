@@ -24,6 +24,7 @@
 
   function speak() {
     let speech = new SpeechSynthesisUtterance();
+    speech.lang = "fr";
     speech.text = document.getElementById("number").innerHTML;
     window.speechSynthesis.speak(speech);
   }
